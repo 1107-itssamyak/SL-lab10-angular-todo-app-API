@@ -1,0 +1,24 @@
+<h2>
+    SpaceX Data
+</h2>
+
+<table>
+    <thead>
+        <td>Mission Id</td>
+        <td>Mission Name</td>
+        <td>Manufacturers</td>
+        <td>Website</td>
+        <td>payload_ids</td>
+        <td>Twitter</td>
+    </thead>
+
+    <tbody *ngFor="let item of data">
+        <td>{{item.mission_id}}</td>
+        <td>{{item.mission_name}}</td>
+
+        <td>{{item.manufacturers}}</td>
+        <td>{{item.website}}</td>
+        <td>{{item.payload_ids}}</td>
+        <td>{{item.Twitter}}</td>
+    </tbody>
+</table>
